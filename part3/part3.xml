@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE State PUBLIC "LITVINOV.K.V." "http://kodaktor.ru/j/dtd_952dc">
+
+<State>
+	<TheMostFrequentIP>
+		<IP>077.234.203.101</IP>
+		<CountIP>12</CountIP>
+	</TheMostFrequentIP>
+	<CountVisits>
+		<Windows count="87"/>
+		<Linux count="18"/>
+		<MacOS count="18"/>
+		<Android count="10"/>
+		<Iphone count="10"/>
+	</CountVisits>
+	<ips>
+		<ip addr="077.234.203.101" frequency="12"/>
+		<ip addr="005.144.096.251" frequency="11"/>
+		<ip addr="188.162.064.018" frequency="6"/>
+		<ip addr="217.066.154.065" frequency="6"/>
+		<ip addr="005.018.239.169" frequency="6"/>
+	</ips>		
+</State>

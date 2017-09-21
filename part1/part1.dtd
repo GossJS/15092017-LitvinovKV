@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!ELEMENT table (student*)>
+    <!ELEMENT student (mark*)>
+    <!ELEMENT mark (#PCDATA)>
+    <!ATTLIST student
+	    name CDATA #REQUIRED
+    >
+    <!ATTLIST mark
+	    subject CDATA #REQUIRED
+    >
+
+    <Knowledge in="CSS3" value="not good"/>
+		<Knowledge in="AJAX" value="not good"/>
+		<Knowledge in="JSON" value="not good"/>
+		<Knowledge in="PHP" value="not good"/>
+		<Knowledge in="JS" value="not good"/>
+		<Knowledge in="BootStrap" value="not good"/>
+		<Knowledge in="HTTP" value="not good"/>
+		<Knowledge in="DOM" value="not good"/>
+		<Knowledge in="SQL" value="not good"/>

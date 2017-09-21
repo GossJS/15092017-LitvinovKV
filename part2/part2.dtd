@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!ELEMENT AboutMe (title|MyKnowledges)*>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT MyKnowledges (Knowledge*)>
+    <!ELEMENT Knowledge EMPTY>
+
+    <!ATTLIST Knowledge
+        in CDATA #REQUIRED
+        value CDATA #REQUIRED
+    >

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!ELEMENT State (TheMostFrequentIP|CountVisits|ips)+>
+    <!ELEMENT TheMostFrequentIP (IP|CountIP)+>
+    <!ELEMENT IP (#PCDATA)>
+    <!ELEMENT CountIP (#PCDATA)>
+    <!ELEMENT CountVisits (Windows|Linux|MacOS|Android|Iphone)+>
+    <!ELEMENT Windows (#PCDATA)>
+    <!ELEMENT Linux (#PCDATA)>
+    <!ELEMENT MacOS (#PCDATA)>
+    <!ELEMENT Android (#PCDATA)>
+    <!ELEMENT Iphone (#PCDATA)>
+    <!ELEMENT ips (ip+)>
+    <!ELEMENT ip EMPTY>
+
+    <!ATTLIST ip
+        addr CDATA #REQUIRED
+        frequency CDATA #REQUIRED
+    >
+
+    <!ATTLIST Windows
+        count CDATA #REQUIRED
+    >
+    <!ATTLIST Linux
+        count CDATA #REQUIRED
+    >
+    <!ATTLIST MacOS
+        count CDATA #REQUIRED
+    >
+    <!ATTLIST Android
+        count CDATA #REQUIRED
+    >
+    <!ATTLIST Iphone
+        count CDATA #REQUIRED
+    >
