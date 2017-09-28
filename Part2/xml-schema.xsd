@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:simpleType name="stringType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+
+	<xs:complexType name="markType">
+		<!-- расширение для сложного типа без элементов -->
+		<xs:simpleContent>
+			<!-- расширяет элемент simpleType или complexType --> 
+			<xs:extension base="xs:integer">
+				<xs:attribute name="discipline" type="stringType" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>			
+	</xs:complexType>
+
+	<xs:complexType name="studentType">
+		<xs:sequence>
+			<xs:element name="mark" maxOccurs="unbounded" type="markType"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="stringType" use="required"/>
+	</xs:complexType>
+
+	<xs:complexType name="tableType">
+		<xs:sequence>
+			<xs:element name="student" maxOccurs="unbounded" type="studentType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="table" type="tableType"/>
+
+</xs:schema>
